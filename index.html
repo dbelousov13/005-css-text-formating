@@ -1,39 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <h1>Lorem, ipsum.</h1>
     <h2>Lorem, ipsum dolor.</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. C cum quam! Nihil, eius expedita <a href="#">quidem</a> aliquam quam dicta quas labore eos animi repellat ducimus odio ad nulla , corrupti facilis enim ratione non magnam eius dicta modi obcaecati.</p>
-    
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. C cum quam!
+      Nihil, eius expedita <a href="#">quidem</a> aliquam quam dicta quas labore
+      eos animi repellat ducimus odio ad nulla , corrupti facilis enim ratione
+      non magnam eius dicta modi obcaecati.
+    </p>
 
-    <button title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, suscipit.">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, suscipit.</button>
+    <button
+      title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, suscipit."
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
+      suscipit.
+    </button>
 
-    <div class="overflow">Lorem                                  ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis hic explicabo reprehenderit pariatur velit quisquam accusamus autem dolores totam deleniti aspernatur provident nisi sapiente temporibus, earum ducimus adipisci delectus laudantium natus numquam quibusdam dolor? Ad dignissimos perspiciatis illo? Commodi consequuntur perferendis at saepe delectus architecto pariatur accusantium quo voluptatum!
+    <div class="overflow">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facilis hic
+      explicabo reprehenderit pariatur velit quisquam accusamus autem dolores
+      totam deleniti aspernatur provident nisi sapiente temporibus, earum
+      ducimus adipisci delectus laudantium natus numquam quibusdam dolor? Ad
+      dignissimos perspiciatis illo? Commodi consequuntur perferendis at saepe
+      delectus architecto pariatur accusantium quo voluptatum!
     </div>
-    <div class="link">Lorem, ipsum.
-    </div>
+    <div class="link">Lorem, ipsum.</div>
 
     <!-- Cascading -->
     <h2>Cascading</h2>
-<p>Lorem, ipsum dolor sit amet      
-    consectetur adipisicing elit. Consectetur cum enim pariatur blanditiis mollitia. Sequi sint minima iure incidunt earum dolor? At animi quae sint distinctio tempora aliquam ex quis!
-</p>
-<p class="greenP" id>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium provident doloremque, impedit dolore soluta non dolorum illo. Eum, beatae dolor.
-</p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur cum
+      enim pariatur blanditiis mollitia. Sequi sint minima iure incidunt earum
+      dolor? At animi quae sint distinctio tempora aliquam ex quis!
+    </p>
+    <p class="greenP" id>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+      provident doloremque, impedit dolore soluta non dolorum illo. Eum, beatae
+      dolor.
+    </p>
 
-<p class="greenP" id="redP">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium provident doloremque, impedit dolore soluta non dolorum illo. Eum, beatae dolor.</p>
-<p style="color:yellow">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nihil?
-</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam officiis explicabo, veritatis velit soluta cumque laborum tenetur ratione commodi nemo provident pariatur eum corrupti ut quas doloremque maiores fugit nobis.</p>
-</body>
+    <p class="greenP" id="redP">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
+      provident doloremque, impedit dolore soluta non dolorum illo. Eum, beatae
+      dolor.
+    </p>
+    <p style="color: yellow">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nihil?
+    </p>
+
+    <!-- Selector types - Типы селекторов (комбинаторы) -->
+
+    Selector types - Типы селекторов (комбинаторы)
+
+    <!-- h2>lorem5^p>lorem10^p>lorem10 -->
+    <!-- Комбинатор соседнего элемента -->
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, enim.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, earum!</p>
+
+    <h2>H2 text.</h2>
+    <p>P1 after h2</p>
+    <p>P2 after h2</p>
+
+    <!-- комбинатор дочернего элемента -->
+    <!-- div.class1>div.class2>div.class3 -->
+    комбинатор дочернего элемента
+    <!-- <div class="class1">
+      <p>P in div class1</p>
+      <div class="class2">
+        <p>P in div class2</p>
+        <div class="class3">
+          <p>P in div class3</p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="div1">
+      <div>
+        DIV1
+        <div>DIV 2 in DIV 1</div>
+      </div>
+    </div>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h2>Blanditiis dolores asperiores expedita sequi.</h2>
+    <p>Nesciunt reiciendis quidem veritatis dolorum!</p>
+    <p>In optio excepturi ab aperiam?</p>
+    <p>Optio beatae aliquid obcaecati! At.</p>
+  </body>
 </html>

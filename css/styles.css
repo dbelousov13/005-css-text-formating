@@ -1,72 +1,89 @@
 span {
-    color: blueviolet;
-    font-size: 20px;
-    text-align: start;
-    direction: ltr;
+  color: blueviolet;
+  font-size: 20px;
+  text-align: start;
+  direction: ltr;
 
-    letter-spacing: 0.2em; /* расстояние между буквами */
-    word-spacing: 0.5em; /* расстояние между словами */
-    line-height: 1em; /* междстрочное расстояние */
-    text-indent: 1.5em; /* отступ первой строки абзацы */
-    /* unicode-bidi: bidi-override;  something wit ierogliph*/
-    /* text-shadow: 1em 1em 0.1em red; тень текста. ВАЖНА ПОСЛЕДОВАТЕЛЬНОСТЬ! ось х > ось у > размытие в рх > цвет */
+  letter-spacing: 0.2em; /* расстояние между буквами */
+  word-spacing: 0.5em; /* расстояние между словами */
+  line-height: 1em; /* междстрочное расстояние */
+  text-indent: 1.5em; /* отступ первой строки абзацы */
+  /* unicode-bidi: bidi-override;  something wit ierogliph*/
+  /* text-shadow: 1em 1em 0.1em red; тень текста. ВАЖНА ПОСЛЕДОВАТЕЛЬНОСТЬ! ось х > ось у > размытие в рх > цвет */
 
-    font-family: "Fira Mono", "DejaVu Sans Mono", monospace; /*по убыванию приоритет при наличии в системе */
-    font-weight: bolder; /* толщина текста, как bold, bolder, lighter так и в цифрах */
-    font-style: oblique 40deg;
-    /* font-variant: small-caps; */
-    /* font-stretch: ultra-expanded; */
-
-
+  font-family: "Fira Mono", "DejaVu Sans Mono", monospace; /*по убыванию приоритет при наличии в системе */
+  font-weight: bolder; /* толщина текста, как bold, bolder, lighter так и в цифрах */
+  font-style: oblique 40deg;
+  /* font-variant: small-caps; */
+  /* font-stretch: ultra-expanded; */
 }
 /* как выглядят ссылки или любой текст text-decoration */
-a{
-    text-decoration: green wavy underline;
-    font-weight: lighter;
+a {
+  text-decoration: green wavy underline;
+  font-weight: lighter;
 }
 
 button {
-    width: 150px;
-    min-width: 50px;
-    height: 1.5em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    cursor: auto;
-    white-space: nowrap;
+  width: 150px;
+  min-width: 50px;
+  height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: auto;
+  white-space: nowrap;
 }
 
-
-.overflow{
-    margin-top: 10px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    width: 200px;
-    height: 150px;
-    /* overflow: scroll; */
-    overflow: auto;
-    white-space: nowrap;
-
+.overflow {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
+  /* overflow: scroll; */
+  overflow: auto;
+  white-space: nowrap;
 }
 
-.link{
-    width: 100px;
-    height:1.5em;
-    border: 2px solid black;
-    border-radius: 1em;
-    cursor: progress;
-
+.link {
+  width: 100px;
+  height: 1.5em;
+  border: 2px solid black;
+  border-radius: 1em;
+  cursor: progress;
 }
 
 /* Cascading */
 /* points 1 */
-p{
-    color:blue;
+p {
+  color: blue;
 }
 /* points 10 */
-.greenP{
-    color: green;
+.greenP {
+  color: green;
 }
 /* points 100 */
-#redP{
-    color:red;
+#redP {
+  color: red;
+}
+
+/* Типы селекторов (комбинаторы) */
+
+/* Комбинатор соседнего элемента */
+
+/* Применяется color: palevioletred; для Р который после Н2 */
+
+h2 + p {
+  color: palevioletred;
+}
+
+/* комбинатор дочернего элемента (для первого уровня вложенности*/
+/* применить для всех дивов в див1 */
+/* .div1 > div {
+  border: 1px solid;
+} */
+
+/* Комбинатор потомков (любой уровень вложенности*/
+
+.div1 div {
+  border: 1px solid;
 }
